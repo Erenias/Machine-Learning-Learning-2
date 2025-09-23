@@ -1,0 +1,24 @@
+This is the second Kaggle competition for the MATH482 course. For this competition, we’ll be using a synthetic dataset specifically created for the assignment. 
+Your goal will be to classify the provided data points using various classification algorithms.
+
+As we discussed in lectures, feature engineering is a crucial part of any data science project. While feature engineering often requires domain expertise, 
+it’s not always feasible to find an expert or gain a full understanding of the data. In practice, data scientists frequently work with datasets that are unfamiliar or not well understood. 
+This homework's objective is to simulate that experience by having you work with a completely abstract dataset.
+
+Objective & Details
+
+Your dataset includes 27 feature columns (named "feature_01", "feature_02", …) and a target column ("target"). The target column has four distinct class labels: "0", "1", "2", and "3".
+
+The training dataset contains 35,000 rows, while the testing dataset has 15,000 rows. As with the previous competition, you should train your model using the training dataset, 
+then run your trained model on the test data and submit your model's output to Kaggle. 
+It’s good practice to create a validation dataset (check online if you’re unfamiliar with this) from the training data and evaluate your model's performance on it in your notebook before using the test dataset 
+and submitting your final results.
+
+You are expected to use at least two different classification algorithms and compare their results on both the training and validation sets. You may choose which model's results to submit.
+
+Note that this dataset is not as clean as in the first competition. It includes some irrelevant (randomly generated and unrelated to the target value) and redundant columns (those that are linear combinations of other features). 
+Your first task is to identify these columns -think about and research methods for detecting irrelevant and redundant features. 
+Also, some columns contain null values, so you’ll need to decide how to handle these before training your model. You should check whether there are some outliers and handle this problem as well.
+
+You will submit the output(s) of your model(s) and a Jupyter notebook that includes all of your work. The evaluation will consider both model accuracy and your approach to data analysis, interpretation, and code clarity. 
+Ensure that your notebook is runnable on Kaggle when submitted, even if you wrote your code on your local computer.
